@@ -1,1 +1,259 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Interactive phishing awareness and cybersecurity training module.">
+
+    <title>Phishing Awareness | Cyber Safe Training</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <a href="#home" class="logo">CYBER<span>SAFE</span></a>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#lessons">Lessons</a>
+            <a href="#practice">Practice</a>
+            <a href="#quiz">Quiz</a>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+            <span class="eyebrow">CYBERSECURITY AWARENESS TRAINING</span>
+
+            <h1>PHISHING AWARENESS:<br>
+                <span>THINK BEFORE YOU CLICK</span>
+            </h1>
+
+            <p>
+                Learn how to recognise phishing attacks, identify suspicious
+                messages, protect sensitive information and respond safely
+                to cyber threats.
+            </p>
+
+            <a href="#lessons" class="primary-button">
+                Start Learning
+            </a>
+        </div>
+
+        <div class="hero-statistics">
+            <div>
+                <strong>06</strong>
+                <span>Learning Lessons</span>
+            </div>
+
+            <div>
+                <strong>02</strong>
+                <span>Practical Exercises</span>
+            </div>
+
+            <div>
+                <strong>05</strong>
+                <span>Quiz Questions</span>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- INTRODUCTION -->
+    <section class="introduction">
+
+        <div class="section-heading">
+            <span class="eyebrow">WELCOME TO CYBER SAFE</span>
+            <h2>Your First Line of Defence Is Awareness</h2>
+        </div>
+
+        <p>
+            Every day, individuals and organisations receive messages
+            designed to deceive them. A single careless click can expose
+            passwords, financial information and confidential business data.
+        </p>
+
+        <p>
+            This training will help you recognise the warning signs,
+            think critically and make safer decisions online.
+        </p>
+
+    </section>
+
+    <!-- LEARNING JOURNEY -->
+    <section id="lessons" class="lessons-section">
+
+        <div class="section-heading">
+            <span class="eyebrow">YOUR TRAINING PATH</span>
+            <h2>Our Learning Journey</h2>
+            <p>Explore the six essential lessons below.</p>
+        </div>
+
+        <div class="lesson-grid">
+
+            <article class="lesson-card">
+                <span class="lesson-number">01</span>
+                <h3>Understanding Phishing</h3>
+                <p>Discover what phishing is and how attacks work.</p>
+                <button class="start-lesson" data-lesson="0">
+                    Start Lesson
+                </button>
+            </article>
+
+            <article class="lesson-card">
+                <span class="lesson-number">02</span>
+                <h3>Types of Phishing</h3>
+                <p>Explore email phishing, smishing, vishing and more.</p>
+                <button class="start-lesson" data-lesson="1">
+                    Start Lesson
+                </button>
+            </article>
+
+            <article class="lesson-card">
+                <span class="lesson-number">03</span>
+                <h3>Social Engineering</h3>
+                <p>Understand how attackers manipulate human behaviour.</p>
+                <button class="start-lesson" data-lesson="2">
+                    Start Lesson
+                </button>
+            </article>
+
+            <article class="lesson-card">
+                <span class="lesson-number">04</span>
+                <h3>Detecting Fake Websites</h3>
+                <p>Learn to inspect URLs and recognise suspicious domains.</p>
+                <button class="start-lesson" data-lesson="3">
+                    Start Lesson
+                </button>
+            </article>
+
+            <article class="lesson-card">
+                <span class="lesson-number">05</span>
+                <h3>Protection Strategies</h3>
+                <p>Learn practical methods for protecting your accounts.</p>
+                <button class="start-lesson" data-lesson="4">
+                    Start Lesson
+                </button>
+            </article>
+
+            <article class="lesson-card">
+                <span class="lesson-number">06</span>
+                <h3>Incident Response</h3>
+                <p>Know what to do when you encounter phishing.</p>
+                <button class="start-lesson" data-lesson="5">
+                    Start Lesson
+                </button>
+            </article>
+
+        </div>
+
+        <!-- SELECTED LESSON APPEARS HERE -->
+        <div id="lesson-content" class="lesson-content" aria-live="polite">
+            <div class="empty-state">
+                <h3>Your lessons start here</h3>
+                <p>Select any lesson above to begin learning.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- PRACTICAL TRAINING -->
+    <section id="practice" class="practice-section">
+
+        <div class="section-heading">
+            <span class="eyebrow">HANDS-ON LEARNING</span>
+            <h2>Practical Training</h2>
+            <p>Put your knowledge to work with these safe exercises.</p>
+        </div>
+
+        <div class="practice-grid">
+
+            <article class="practice-card">
+                <span class="practice-label">EXERCISE 01</span>
+                <h3>Identify a Phishing Email</h3>
+                <p>
+                    Examine a fictional suspicious email and identify
+                    the warning signs.
+                </p>
+                <button id="email-exercise-button">
+                    Start Email Exercise
+                </button>
+            </article>
+
+            <article class="practice-card">
+                <span class="practice-label">EXERCISE 02</span>
+                <h3>Inspect a Suspicious URL</h3>
+                <p>
+                    Examine a fictional URL and identify its actual hostname.
+                </p>
+                <button id="url-exercise-button">
+                    Start URL Exercise
+                </button>
+            </article>
+
+        </div>
+
+        <div id="practice-content" class="practice-content" aria-live="polite">
+            <div class="empty-state">
+                <h3>Ready to practise?</h3>
+                <p>Select an exercise to begin.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- QUIZ -->
+    <section id="quiz" class="quiz-section">
+
+        <div class="section-heading">
+            <span class="eyebrow">TEST YOUR KNOWLEDGE</span>
+            <h2>Knowledge Assessment</h2>
+            <p>
+                Answer five questions to test what you have learned.
+                You need at least 80% to qualify for a completion certificate.
+            </p>
+        </div>
+
+        <div id="quiz-content" aria-live="polite">
+
+            <div class="empty-state">
+                <h3>Are you ready?</h3>
+                <p>Start your assessment when you are ready.</p>
+                <button id="start-quiz-button">Start Assessment</button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-logo">CYBER<span>SAFE</span></div>
+
+        <p>
+            Phishing Awareness Training
+            | CodeAlpha Cybersecurity Internship Project 2
+        </p>
+
+        <p class="footer-message">
+            Stay alert. Stay informed. Think before you click.
+        </p>
+
+        <p class="copyright">
+            &copy; 2026 Cyber Safe Training Module.
+            Educational use only.
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
