@@ -1,52 +1,39 @@
-# Project Overview: Phishing Awareness Training
+# References – Phishing Awareness Training
 
-## 1. Introduction
+The following trusted cybersecurity resources informed the development of this project.
 
-This project was developed as part of the CodeAlpha Cybersecurity Internship. It focuses on educating users about phishing attacks, social engineering techniques and safe online practices.
+## 1. Cybersecurity and Infrastructure Security Agency (CISA)
 
-Phishing is a common cybersecurity threat in which attackers impersonate trusted organisations or individuals to manipulate victims into disclosing sensitive information.
+**Topic:** Recognize and Report Phishing
 
-## 2. Project Aim
+https://www.cisa.gov/secure-our-world/recognize-and-report-phishing
 
-The aim is to improve cybersecurity awareness by teaching users how to recognise, prevent and respond to phishing attacks.
+Provides guidance on recognising suspicious messages and reporting phishing attempts.
 
-## 3. Project Objectives
+## 2. Federal Trade Commission (FTC)
 
-- Explain phishing and its different forms.
-- Identify suspicious emails and malicious-looking URLs.
-- Understand social engineering techniques.
-- Promote strong passwords and multi-factor authentication.
-- Demonstrate safe phishing analysis exercises.
-- Assess user knowledge through an interactive quiz.
+**Topic:** How to Recognize and Avoid Phishing Scams
 
-## 4. Project Components
+https://consumer.ftc.gov/articles/how-recognize-and-avoid-phishing-scams
 
-**Training presentation:** Introduces phishing concepts, examples, prevention and incident response.
+Explains common phishing warning signs and ways to protect personal information.
 
-**Online learning module:** Provides six interactive lessons.
+## 3. Federal Bureau of Investigation (FBI)
 
-**Practical exercises:** Demonstrate suspicious email analysis and URL inspection using fictional examples.
+**Topic:** Business Email Compromise
 
-**Assessment:** A five-question quiz with explanations and a passing score of 80%.
+https://www.fbi.gov/how-we-can-help-you/common-frauds-and-scams/business-email-compromise
 
-**Certificate:** Allows successful participants to generate a certificate of completion.
+Provides information about email impersonation, fraudulent payment requests and business email compromise.
 
-## 5. Technologies
+## 4. National Institute of Standards and Technology (NIST)
 
-- HTML5
-- CSS3
-- JavaScript
-- Microsoft PowerPoint
-- GitHub
+**Topic:** Digital Identity Guidelines
 
-## 6. Expected Learning Outcomes
+https://pages.nist.gov/800-63-4/
 
-Participants should be able to identify common phishing indicators, inspect suspicious URLs, protect their accounts and report suspected phishing incidents.
+Provides guidance on digital identity, authentication and secure access.
 
-## 7. Safety
+## Purpose of References
 
-All demonstrations use fictional examples. The project does not send phishing emails, collect credentials or target real organisations.
-
-## 8. Conclusion
-
-The project demonstrates how practical cybersecurity education can help individuals and organisations reduce the risks associated with phishing attacks.
+These resources support the educational material in the presentation and online training module. They help ensure that the project promotes recognised cybersecurity awareness and protection practices.
