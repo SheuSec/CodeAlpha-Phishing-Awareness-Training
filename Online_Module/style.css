@@ -1,1 +1,758 @@
 
+/* =====================================================
+   CODEALPHA PROJECT 2
+   PHISHING AWARENESS TRAINING
+   COMPLETE CORPORATE STYLESHEET
+===================================================== */
+
+/* 1. GLOBAL SETTINGS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0b1729;
+    color: #f1f5f9;
+    line-height: 1.7;
+}
+
+button,
+input {
+    font-family: inherit;
+}
+
+button {
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible {
+    outline: 3px solid #38bdf8;
+    outline-offset: 3px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+section {
+    padding: 85px 8%;
+}
+
+/* 2. HEADER */
+
+header {
+    min-height: 75px;
+    padding: 15px 8%;
+    background: #10223d;
+    border-bottom: 1px solid #263d5b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo,
+.footer-logo {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.logo span,
+.footer-logo span {
+    color: #38bdf8;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: #cbd5e1;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+/* 3. HERO */
+
+.hero {
+    min-height: 570px;
+    padding: 90px 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background:
+        radial-gradient(
+            circle at 80% 15%,
+            rgba(37, 99, 235, 0.30),
+            transparent 35%
+        ),
+        linear-gradient(135deg, #10223d, #0b1729);
+}
+
+.hero-content {
+    max-width: 850px;
+}
+
+.eyebrow {
+    display: inline-block;
+    color: #38bdf8;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: clamp(36px, 5vw, 58px);
+    line-height: 1.2;
+    color: white;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #38bdf8;
+}
+
+.hero p {
+    max-width: 700px;
+    color: #cbd5e1;
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+.primary-button {
+    display: inline-block;
+    background: #2563eb;
+    color: white;
+    padding: 14px 27px;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+.primary-button:hover {
+    background: #1d4ed8;
+    transform: translateY(-3px);
+}
+
+.hero-statistics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-top: 65px;
+}
+
+.hero-statistics div {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-statistics strong {
+    font-size: 30px;
+    color: #38bdf8;
+}
+
+.hero-statistics span {
+    color: #cbd5e1;
+    font-size: 13px;
+}
+
+/* 4. INTRODUCTION */
+
+.introduction {
+    background: #0f1e33;
+}
+
+.introduction p {
+    max-width: 850px;
+    color: #cbd5e1;
+    margin: 15px 0;
+}
+
+/* 5. SECTION HEADINGS */
+
+.section-heading {
+    max-width: 750px;
+    margin-bottom: 35px;
+}
+
+.section-heading h2 {
+    color: white;
+    font-size: clamp(27px, 4vw, 36px);
+    line-height: 1.3;
+    margin-bottom: 15px;
+}
+
+.section-heading p {
+    color: #cbd5e1;
+}
+
+/* 6. LESSONS SECTION */
+
+.lessons-section {
+    background: #0b1729;
+}
+
+.lesson-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.lesson-card {
+    background: #172b47;
+    border: 1px solid #294361;
+    border-radius: 12px;
+    padding: 27px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: 0.3s ease;
+}
+
+.lesson-card:hover {
+    transform: translateY(-5px);
+    border-color: #38bdf8;
+}
+
+.lesson-number {
+    color: #38bdf8;
+    font-size: 34px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.lesson-card h3 {
+    color: white;
+    font-size: 19px;
+    margin-bottom: 12px;
+}
+
+.lesson-card p {
+    color: #cbd5e1;
+    font-size: 14px;
+    margin-bottom: 22px;
+    flex-grow: 1;
+}
+
+.lesson-card button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    padding: 11px 17px;
+    font-weight: bold;
+}
+
+.lesson-card button:hover {
+    background: #1d4ed8;
+}
+
+/* 7. LESSON VIEWER */
+
+.lesson-content {
+    margin-top: 35px;
+    scroll-margin-top: 100px;
+}
+
+.lesson-viewer {
+    background: #172b47;
+    border: 1px solid #294361;
+    border-radius: 12px;
+    padding: 32px;
+}
+
+.lesson-progress {
+    color: #38bdf8;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.lesson-viewer h3 {
+    font-size: 26px;
+    color: #38bdf8;
+    margin-bottom: 20px;
+}
+
+.lesson-viewer h4 {
+    color: white;
+    margin: 22px 0 10px;
+}
+
+.lesson-viewer p {
+    color: #dbeafe;
+    margin-bottom: 15px;
+}
+
+.lesson-viewer ul,
+.lesson-viewer ol {
+    padding-left: 25px;
+    margin: 15px 0 25px;
+}
+
+.lesson-viewer li {
+    color: #cbd5e1;
+    margin-bottom: 10px;
+}
+
+.lesson-controls {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    border-top: 1px solid #334e70;
+    padding-top: 22px;
+    margin-top: 25px;
+}
+
+.lesson-controls button {
+    padding: 12px 22px;
+}
+
+/* 8. BUTTONS */
+
+button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+button:hover:not(:disabled) {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* 9. PRACTICAL TRAINING */
+
+.practice-section {
+    background: #0f1e33;
+}
+
+.practice-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.practice-card {
+    background: #172b47;
+    border: 1px solid #294361;
+    border-radius: 12px;
+    padding: 28px;
+}
+
+.practice-label {
+    color: #38bdf8;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.practice-card h3 {
+    color: white;
+    font-size: 21px;
+    margin: 15px 0;
+}
+
+.practice-card p {
+    color: #cbd5e1;
+    margin-bottom: 20px;
+}
+
+.practice-content {
+    margin-top: 30px;
+}
+
+.practice-box {
+    background: #172b47;
+    border: 1px solid #294361;
+    border-radius: 12px;
+    padding: 30px;
+}
+
+.practice-box h3 {
+    color: #38bdf8;
+    margin-bottom: 20px;
+}
+
+.practice-box p {
+    margin-bottom: 15px;
+}
+
+.fake-email {
+    background: #ffffff;
+    color: #1e293b;
+    padding: 25px;
+    border-radius: 8px;
+    margin: 20px 0;
+    overflow-wrap: anywhere;
+}
+
+.fake-email p {
+    color: #1e293b;
+}
+
+.practice-box label {
+    display: block;
+    margin: 20px 0 8px;
+    font-weight: bold;
+}
+
+#url-answer,
+#participant-name {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    background: #0b1729;
+    color: white;
+    border: 1px solid #475569;
+    border-radius: 7px;
+    padding: 14px;
+    font-size: 15px;
+    margin: 15px 0;
+}
+
+#url-answer::placeholder,
+#participant-name::placeholder {
+    color: #94a3b8;
+}
+
+/* 10. QUIZ SECTION */
+
+.quiz-section {
+    background: #0b1729;
+}
+
+#quiz-content {
+    max-width: 900px;
+}
+
+.quiz-box,
+.quiz-results {
+    background: #172b47;
+    border: 1px solid #294361;
+    border-radius: 12px;
+    padding: 30px;
+}
+
+.quiz-box > p {
+    color: #38bdf8;
+    font-weight: bold;
+}
+
+.quiz-box h3 {
+    color: white;
+    font-size: 22px;
+    margin: 25px 0;
+}
+
+.quiz-options {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Quiz progress */
+
+.progress-track {
+    width: 100%;
+    height: 9px;
+    background: #334155;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 18px 0;
+}
+
+.progress-fill {
+    height: 100%;
+    background: #38bdf8;
+    transition: width 0.3s ease;
+}
+
+/* Quiz answer options */
+
+.quiz-option {
+    display: block;
+    width: 100%;
+    text-align: left;
+    background: #203a5c;
+    color: white;
+    border: 1px solid #385475;
+    padding: 16px;
+    border-radius: 8px;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.quiz-option:hover:not(:disabled) {
+    background: #2563eb;
+    border-color: #60a5fa;
+}
+
+.quiz-option:disabled {
+    cursor: not-allowed;
+    opacity: 1;
+}
+
+.quiz-option.correct-option {
+    background: #166534;
+    border-color: #22c55e;
+}
+
+.quiz-option.wrong-option {
+    background: #991b1b;
+    border-color: #ef4444;
+}
+
+/* Quiz feedback */
+
+#quiz-feedback {
+    margin-top: 25px;
+}
+
+#quiz-feedback p {
+    margin-bottom: 12px;
+}
+
+/* 11. QUIZ RESULTS */
+
+.quiz-results {
+    text-align: center;
+}
+
+.quiz-results h2 {
+    font-size: 55px;
+    color: white;
+    margin: 20px 0;
+}
+
+.quiz-results h3 {
+    color: #38bdf8;
+}
+
+.quiz-results p {
+    color: #cbd5e1;
+    margin: 15px 0;
+}
+
+#participant-name {
+    margin: 20px auto;
+}
+
+#certificate-button {
+    background: #15803d;
+}
+
+#certificate-button:hover {
+    background: #166534;
+}
+
+#retry-quiz {
+    background: #475569;
+}
+
+#retry-quiz:hover {
+    background: #334155;
+}
+
+/* 12. SUCCESS AND ERROR MESSAGES */
+
+.success {
+    color: #4ade80;
+    background: rgba(22, 101, 52, 0.15);
+    border-left: 4px solid #22c55e;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 15px 0;
+}
+
+.error {
+    color: #f87171;
+    background: rgba(153, 27, 27, 0.15);
+    border-left: 4px solid #ef4444;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 15px 0;
+}
+
+/* 13. EMPTY STATES */
+
+.empty-state {
+    background: #172b47;
+    border: 1px dashed #385475;
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+}
+
+.empty-state h3 {
+    color: #38bdf8;
+    margin-bottom: 10px;
+}
+
+.empty-state p {
+    color: #cbd5e1;
+    margin-bottom: 15px;
+}
+
+/* 14. FOOTER */
+
+footer {
+    background: #081321;
+    border-top: 1px solid #263d5b;
+    padding: 40px 8%;
+    text-align: center;
+}
+
+.footer-logo {
+    margin-bottom: 15px;
+}
+
+footer p {
+    color: #94a3b8;
+    font-size: 13px;
+    margin: 8px 0;
+}
+
+.footer-message {
+    color: #38bdf8;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.copyright {
+    font-size: 12px;
+}
+
+/* 15. TABLET RESPONSIVENESS */
+
+@media screen and (max-width: 900px) {
+
+    header {
+        padding: 15px 5%;
+    }
+
+    section {
+        padding: 70px 5%;
+    }
+
+    .lesson-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+/* 16. MOBILE RESPONSIVENESS */
+
+@media screen and (max-width: 600px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    nav {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 13px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    section {
+        padding: 55px 5%;
+    }
+
+    .hero {
+        min-height: 480px;
+        padding: 60px 6%;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    .hero-statistics {
+        gap: 25px;
+        margin-top: 45px;
+    }
+
+    .hero-statistics strong {
+        font-size: 24px;
+    }
+
+    .lesson-grid,
+    .practice-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .lesson-viewer,
+    .practice-box,
+    .quiz-box,
+    .quiz-results {
+        padding: 20px;
+    }
+
+    .lesson-controls {
+        flex-direction: column;
+    }
+
+    .lesson-controls button {
+        width: 100%;
+    }
+
+    .quiz-option {
+        font-size: 14px;
+        padding: 14px;
+    }
+
+    .quiz-results h2 {
+        font-size: 42px;
+    }
+
+}
+
+/* END OF STYLESHEET */
+
